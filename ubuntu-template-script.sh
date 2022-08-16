@@ -13,7 +13,7 @@ sudo qm set 10000 --boot c --bootdisk scsi0
 sudo qm set 10000 --ide2 villager-1:cloudinit
 sudo qm set 10000 --serial0 socket --vga serial0
 sudo qm set 10000 --ipconfig0 ip=dhcp
-sudo qm resize 10000 scsi0 32G
+sudo qm resize 10000 scsi0 100G
 sudo qm set 10000 --agent enabled=1
 sudo qm template 10000
 rm focal-server-cloudimg-amd64.img
